@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AspNetCore_lab1b</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; 
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px; 
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            background-color: #000;
+            color: #fff; 
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #333;
+            }
+
+        #messages {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #000; 
+            color: #fff; 
+            border: 1px solid #ccc;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+            #messages p {
+                margin: 0;
+                padding: 5px 0;
+                color: #fff; 
+            }
+
+    </style>
+</head>
+<body>
+    <h1>AspNetCore_lab1b - WebSocket</h1>
+    <div id="buttons">
+        <button onclick="WSstop()">Stop</button>
+        <button onclick="WSsend()">Send</button>
+    </div>
+    <div id="messages"></div>
+
+    <script>
+        var message = document.getElementById('messages');
+        var ws;
+        var sI;
+
+        function WSsend() {
+            let k = 0;
+
+            ws = new WebSocket(`ws://${location.hostname}:${location.port}/testws`);
+
+            ws.onopen = () => {
+                message.innerHTML += '[Send]: [Connection from Client]</br>';
+                ws.send('[Connection from Client]');
+
+                sI = setInterval(() => {
+                    if (ws.readyState === WebSocket.OPEN) {
+                        ws.send('[Send from Client]' + (k++));
+                    }
+                }, 1000);
+            }
+            ws.onclose = () => { message.innerHTML += '[Close]' + "</br>" };
+            ws.onmessage = (e) => { message.innerHTML += e.data + "</br>" };
+            ws.onerror = (e) => { message.innerHTML += e.message + "</br>" };
+        };
+
+        function WSstop() {
+            clearInterval(sI);
+            ws.close();
+        };
+    </script>
+</body>
+</html>

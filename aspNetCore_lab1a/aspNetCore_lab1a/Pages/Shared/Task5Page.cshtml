@@ -1,0 +1,53 @@
+﻿@page
+@model Task5Model
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Task 5</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5" style="width:25%">
+        <form id="form5">
+            <h5>Введите два числа:</h5>
+            <input class="form-control" id="X" type="number" required min="0" step="any" /><br />
+            <input class="form-control" id="Y" type="number" required min="0" step="any" /><br />
+            <button type="button" class="btn btn-secondary fs-5 mb-5">Умножить</button>
+            <h5>Результат:</h5>
+            <div id="Result" class="form-control" readonly></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("form5").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var x = document.getElementById("X").value;
+            var y = document.getElementById("Y").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/task5', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data && data.result !== undefined) {
+                            document.getElementById("Result").innerText = data.result;
+                            console.log("Server response: " + data.result);
+                        } else {
+                            console.log("Unexpected response format");
+                        }
+                    } else {
+                        console.log("Error: " + xhr.statusText);
+                    }
+                }
+            };
+            xhr.send(JSON.stringify({ X: parseInt(x), Y: parseInt(y) }));
+        });
+    </script>
+</body>
+</html>

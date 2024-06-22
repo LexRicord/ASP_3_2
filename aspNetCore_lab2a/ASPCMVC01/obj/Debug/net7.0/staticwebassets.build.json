@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "fFceorSgchIGvaU5eCJqvDo2njDyJhCmNFoc7mcF4JE=",
+  "Source": "ASPCMVC1",
+  "BasePath": "_content/ASPCMVC1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPCMVC1\\wwwroot",
+      "Source": "ASPCMVC1",
+      "ContentRoot": "D:\\repos\\ASP_3_2\\aspNetCore_lab2a\\ASPCMVC01\\wwwroot\\",
+      "BasePath": "_content/ASPCMVC1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\repos\\ASP_3_2\\aspNetCore_lab2a\\ASPCMVC01\\wwwroot\\index.html",
+      "SourceId": "ASPCMVC1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\ASP_3_2\\aspNetCore_lab2a\\ASPCMVC01\\wwwroot\\",
+      "BasePath": "_content/ASPCMVC1",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

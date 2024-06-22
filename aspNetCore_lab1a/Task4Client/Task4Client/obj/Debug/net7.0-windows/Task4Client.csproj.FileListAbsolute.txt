@@ -1,0 +1,17 @@
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\bin\Debug\net7.0-windows\Task4Client.exe
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\bin\Debug\net7.0-windows\Task4Client.deps.json
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\bin\Debug\net7.0-windows\Task4Client.runtimeconfig.json
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\bin\Debug\net7.0-windows\Task4Client.dll
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\bin\Debug\net7.0-windows\Task4Client.pdb
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.csproj.AssemblyReference.cache
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.Form1.resources
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.csproj.GenerateResource.cache
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.AssemblyInfoInputs.cache
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.AssemblyInfo.cs
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.csproj.CoreCompileInputs.cache
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.dll
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\refint\Task4Client.dll
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.pdb
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\Task4Client.genruntimeconfig.cache
+D:\repos\ASP_3_2\asp_lab_1\aspNet_lab_1a\Task4Client\Task4Client\obj\Debug\net7.0-windows\ref\Task4Client.dll

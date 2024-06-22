@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\aspNetCore_lab1a.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASPCMVC2.props" />
+</Project>
